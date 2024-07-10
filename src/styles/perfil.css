@@ -1,0 +1,87 @@
+/* Paleta de Colores */
+:root {
+  --purple-heart-50: #f3f1ff;
+  --purple-heart-100: #ebe5ff;
+  --purple-heart-200: #d9ceff;
+  --purple-heart-300: #bea6ff;
+  --purple-heart-400: #9f75ff;
+  --purple-heart-500: #843dff;
+  --purple-heart-600: #7916ff;
+  --purple-heart-700: #6b04fd;
+  --purple-heart-800: #5a03d5;
+  --purple-heart-900: #4b05ad;
+  --purple-heart-950: #2c0076;
+}
+
+/* Estilos generales */
+.card {
+  margin-top: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--purple-heart-400);
+  color: #fff;
+  padding: 80px 0;
+  display: flex;
+}
+
+.logo {
+  max-height: 100px;
+  margin-left: 15px;
+}
+
+.logo img {
+  margin-top: -25px;
+  width: 200px;
+  height: 150px;
+}
+
+p {
+  color: rgb(248, 238, 238);
+  margin-left: 10px;
+  
+}
+
+.card_white {
+    margin-top: 10px;
+    width: 40%; /* Ancho del cuadro blanco reducido */
+    max-width: 500px; /* Ancho máximo para cuadros más pequeños */
+    margin: 2rem auto; /* Centra el cuadro horizontalmente y añade margen vertical */
+    border: 2px solid #000000;
+    display: flex;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+
+.c_card {
+  text-align: center;
+}
+
+footer {
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pie {
+  margin-left: 10px;
+}
+
+
