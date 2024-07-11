@@ -55,7 +55,7 @@ function Pag1() {
             <img className="user_logo" src={userlog} alt="User Logo" />
           </button>
           <div className="dropdown-content" id="dropdown-options">
-            <NavLink to= "/perfil">Perfil</NavLink>
+            <NavLink to="/perfil">Perfil</NavLink>
             <NavLink to="/docs">Mis publicaciones</NavLink>
             <NavLink to="/">Cerrar Sesión</NavLink>
           </div>
@@ -72,34 +72,19 @@ function Pag1() {
               <div className="contenido-columna">
                 <p>Revistas</p>
               </div>
-              <div className="cuadro-blanco">
-                <div className="contenido-cuadro">
-                  <h3>Revista #1:</h3>
-                  <p>Descripción de la revista...</p>
-                </div>
-              </div>
+              {actualizarCuadro('Revista', documentos.filter((documento) => documento.tipo === 'Revista'))}
             </div>
             <div className="columna">
               <div className="contenido-columna">
                 <p>Documentos Científicos</p>
               </div>
-              <div className="cuadro-blanco">
-                <div className="contenido-cuadro">
-                  <h3>Documento #1:</h3>
-                  <p>Descripción del documento...</p>
-                </div>
-              </div>
+              {actualizarCuadro('Documentos Científicos', documentos.filter((documento) => documento.tipo === 'Documentos Científicos'))}
             </div>
             <div className="columna">
               <div className="contenido-columna">
                 <p>Tesis</p>
               </div>
-              <div className="cuadro-blanco">
-                <div className="contenido-cuadro">
-                  <h3>Tesis #1:</h3>
-                  <p>Descripción de la tesis...</p>
-                </div>
-              </div>
+              {actualizarCuadro('Tesis', documentos.filter((documento) => documento.tipo === 'Tesis'))}
             </div>
           </div>
         </section>

@@ -51,18 +51,16 @@ function Docs() {
           <NavLink to="/creardoc"><button>Subir documento</button></NavLink>
         </section>
         <section className="publicaciones">
-        <div class="documento">
-                <h2>Documento #1</h2>
-                <p>Descripción del documento #1.</p>
-                <a href="ruta_al_documento1.pdf" target="_blank">Ver Documento</a>
+          {documentos.map((documento) => (
+            <div key={documento.id} className="documento">
+                <h2>{documento.nombre}</h2>
+                <h2>{documento.tipo}</h2>
+            <section className='busqueda'>
+                <button onClick={() => handleEliminarDocumento(documento.id)}>Eliminar Documento</button>
+            </section>
             </div>
-            <div class="documento">
-                <h2>Documento #2</h2>
-                <p>Descripción del documento #2.</p>
-                <a href="ruta_al_documento2.pdf" target="_blank">Ver Documento</a>
-            </div>
-  
-        </section>
+          ))}
+       </section> 
       </main>
       <footer>
         <div className="pie">

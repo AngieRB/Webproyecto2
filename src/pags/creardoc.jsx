@@ -85,7 +85,7 @@ const Creardocs = () => {
               <option value="">Seleccione...</option>
               <option value="Tesis">Tesis</option>
               <option value="Revista">Revistas</option>
-              <option value="Documento">Documento Cientifico</option>
+              <option value="Documentos Científicos">Documentos Científicos</option>
             </select><br />
 
             <label htmlFor="descripcion">Descripción:</label><br />
